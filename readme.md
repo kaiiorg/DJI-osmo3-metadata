@@ -106,3 +106,4 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'DJI_20230701103032_0001_D.MP4':
                 - Google results suggest its a Sony sensor
         - array of sample data; found 8077 instances of this field; see `dji_dbgi.2.json`
             - No idea what any of these values mean, not going to list them here
+- The [gyroflow](https://github.com/gyroflow/gyroflow) docs [mention upcoming support for the camera](https://docs.gyroflow.xyz/app/getting-started/supported-cameras/dji)
