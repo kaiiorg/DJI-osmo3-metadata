@@ -1,0 +1,93 @@
+[
+    {
+        "Tag": {
+            "Num": 1,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 7,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 3,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 5,
+                        "Payload": "dmlkZW8=",
+                        "PayloadAsString": "video"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Tag": {
+            "Num": 3,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 15,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 1,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 1,
+                        "Payload": 2688
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 2,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 1,
+                        "Payload": 1512
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 3,
+                        "Type": 5,
+                        "TypeStr": "int32"
+                    },
+                    "Val": {
+                        "Length": 3,
+                        "Payload": 1114620559
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 5,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 0,
+                        "Payload": 8
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 6,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 0,
+                        "Payload": 4
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "Tag": {
+            "Num": 1,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 57,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 1,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 16,
+                        "Payload": "ZHZ0bV9hYzAwMi5wcm90bw==",
+                        "PayloadAsString": "dvtm_ac002.proto"
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 2,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 8,
+                        "Payload": "MDIuMDAuMDE=",
+                        "PayloadAsString": "02.00.01"
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 3,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 5,
+                        "Payload": "Mi4wLjA=",
+                        "PayloadAsString": "2.0.0"
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 9,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 3,
+                        "Payload": 7500850
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 10,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 15,
+                        "Payload": "REpJIE9zbW9BY3Rpb24z",
+                        "PayloadAsString": "DJI OsmoAction3"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Tag": {
+            "Num": 2,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 4,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 1,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 0,
+                        "Payload": 1
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 2,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 0,
+                        "Payload": 1
+                    }
+                }
+            ]
+        }
+    }
+]

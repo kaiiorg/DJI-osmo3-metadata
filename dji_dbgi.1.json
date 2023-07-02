@@ -1,0 +1,121 @@
+[
+    {
+        "Tag": {
+            "Num": 1,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 44,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 1,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 5,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 0,
+                                    "TypeStr": "int"
+                                },
+                                "Val": {
+                                    "Length": 3,
+                                    "Payload": 7500850
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 2,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 35,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 2,
+                                    "TypeStr": "[]byte"
+                                },
+                                "Val": {
+                                    "Length": 19,
+                                    "Payload": "ZGJnaW5mb19hYzIwMi5wcm90bw==",
+                                    "PayloadAsString": "dbginfo_ac202.proto"
+                                }
+                            },
+                            {
+                                "Tag": {
+                                    "Num": 2,
+                                    "Type": 2,
+                                    "TypeStr": "[]byte"
+                                },
+                                "Val": {
+                                    "Length": 5,
+                                    "Payload": "My4xLjA=",
+                                    "PayloadAsString": "3.1.0"
+                                }
+                            },
+                            {
+                                "Tag": {
+                                    "Num": 3,
+                                    "Type": 2,
+                                    "TypeStr": "[]byte"
+                                },
+                                "Val": {
+                                    "Length": 5,
+                                    "Payload": "Mi4wLjI=",
+                                    "PayloadAsString": "2.0.2"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Tag": {
+            "Num": 2,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 10,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 1,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 8,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 2,
+                                    "TypeStr": "[]byte"
+                                },
+                                "Val": {
+                                    "Length": 6,
+                                    "Payload": "SU1YNjg2",
+                                    "PayloadAsString": "IMX686"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]

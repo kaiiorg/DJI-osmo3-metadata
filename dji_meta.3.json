@@ -1,0 +1,175 @@
+[
+    {
+        "Tag": {
+            "Num": 1,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 5,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 2,
+                        "Type": 0,
+                        "TypeStr": "int"
+                    },
+                    "Val": {
+                        "Length": 3,
+                        "Payload": 7500850
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "Tag": {
+            "Num": 2,
+            "Type": 2,
+            "TypeStr": "[]byte"
+        },
+        "Val": {
+            "Length": 41,
+            "Payload": [
+                {
+                    "Tag": {
+                        "Num": 7,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 5,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 5,
+                                    "TypeStr": "int32"
+                                },
+                                "Val": {
+                                    "Length": 3,
+                                    "Payload": 1120403456
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 9,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 5,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 5,
+                                    "TypeStr": "int32"
+                                },
+                                "Val": {
+                                    "Length": 3,
+                                    "Payload": 1120403456
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 10,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 5,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 2,
+                                    "TypeStr": "[]byte"
+                                },
+                                "Val": {
+                                    "Length": 3,
+                                    "Payload": "Af8E",
+                                    "PayloadAsString": "\u0001�\u0004"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 23,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 4,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 5,
+                                    "TypeStr": "int32"
+                                },
+                                "Val": {
+                                    "Length": 3,
+                                    "Payload": 1065353216
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 24,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": 2,
+                        "Payload": [
+                            {
+                                "Tag": {
+                                    "Num": 1,
+                                    "Type": 0,
+                                    "TypeStr": "int"
+                                },
+                                "Val": {
+                                    "Length": 1,
+                                    "Payload": 4622
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 30,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": -1,
+                        "Payload": []
+                    }
+                },
+                {
+                    "Tag": {
+                        "Num": 31,
+                        "Type": 2,
+                        "TypeStr": "[]byte"
+                    },
+                    "Val": {
+                        "Length": -1,
+                        "Payload": []
+                    }
+                }
+            ]
+        }
+    }
+]
