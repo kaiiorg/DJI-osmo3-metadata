@@ -41,6 +41,8 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'DJI_20230701103032_0001_D.MP4':
     Stream #0:5: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 1:1 DAR 16:9], 90k tbr, 90k tbn, 90k tbc (attached pic)
 ```
 
+- Duration: 00:02:14.78
+    - 134.78 seconds
 - Contents of stream `0:2` dumped to `dji_meta.bin`
 - Contents of stream `0:3` dumped to `dji_dbgi.bin`
 
@@ -53,57 +55,76 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'DJI_20230701103032_0001_D.MP4':
 - Confirmed files are protobuf data!
 - Determined the top level data structure:
     - `dvtm_ac002.proto`
-        - description; found single field of this type; see `dji_meta.1.json`
-            - source protobuf definition
-                - "dvtm_ac002.proto"
-            - version number 1
-                - "02.00.01"
-                - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
-                - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
-            - version number 2
-                - "2.0.0"
-                - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
-                - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
-            - int value
-                - 7500850
-            - camera make/model
-                - "DJI OsmoAction3"
-        - video info; found single field of this type; see `dji_meta.2.json`
-            - description string
-                - "video"
-            - video horizontal resolution
-                - 2688
-                - matches source video file horizontal resolution
-            - video vertical resolution
-                - 1512
-                - matches source video file vertical resolution
-            - int32 value 1
-                - 1114620559
-            - int value 1
-                - 8
-            - int value 2
-                - 4
-        - array of sample data; found 8077 fields of this type; see `dji_meta.3.json`
-            - No idea what any of these values mean, not going to list them here
+        - DVT: Design Validation Test?
+            - Maybe not, but could be a leftover from the development process
+        - Contents
+            - description; found single field of this type; see `dji_meta.1.json`
+                - source protobuf definition
+                    - "dvtm_ac002.proto"
+                - version number 1
+                    - "02.00.01"
+                    - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
+                    - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
+                - version number 2
+                    - "2.0.0"
+                    - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
+                    - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
+                - int value
+                    - 7500850
+                - camera make/model
+                    - "DJI OsmoAction3"
+            - video info; found single field of this type; see `dji_meta.2.json`
+                - description string
+                    - "video"
+                - video horizontal resolution
+                    - 2688
+                    - matches source video file horizontal resolution
+                - video vertical resolution
+                    - 1512
+                    - matches source video file vertical resolution
+                - int32 value 1
+                    - 1114620559
+                - int value 1
+                    - 8
+                - int value 2
+                    - 4
+            - array of sample data
+                - Found 8077 fields of this type; effective ~59.4 samples per second
+                - See `dji_meta.3.json`
+                - No idea what any of these values mean, not going to list them here
     - `dbginfo_ac202.proto`
-        - description; found single field of this type; see `dji_dbgi.1.json`
-            - int 1
-                - 7500850
-            - source protobuf definition
-                - "dbginfo_ac202.proto"
-            - version number 1
-                - "3.1.0"
-                - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
-                - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
-                - Maybe version of protoc used by DJI?
-            - version number 2
-                - "2.0.2"
-                - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
-                - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
-                - Maybe version of protoc plugin used to compile the protobuf definition files to the source language used by DJI
-            - sensor name
-                - "IMX686"
-                - Google results suggest its a Sony sensor
-        - array of sample data; found 8077 instances of this field; see `dji_dbgi.2.json`
-            - No idea what any of these values mean, not going to list them here
+        - dbg info; debugging info? Might explain the giant binary blobs found in the data samples
+            - Did DJI forget to turn debugging information off? Or did they do that on purpose for customer support?
+        - Contents
+            - description; found single field of this type; see `dji_dbgi.1.json`
+                - int 1
+                    - 7500850
+                - source protobuf definition
+                    - "dbginfo_ac202.proto"
+                - version number 1
+                    - "3.1.0"
+                    - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
+                    - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
+                    - Maybe version of protoc used by DJI?
+                - version number 2
+                    - "2.0.2"
+                    - Not `Firmware Version Number` as defined in `Device Info` menu (was "01.03.10.30")
+                    - Not `Camera Firmware Version Number` as defined in `Device Info` menu (was "10.00.31.12")
+                    - Maybe version of protoc plugin used to compile the protobuf definition files to the source language used by DJI
+                - sensor name
+                    - "IMX686"
+                    - Google results suggest its a Sony sensor
+            - array of sample data
+                - Found 8077 instances of this field; effective ~59.4 samples per second
+                - See `dji_dbgi.2.json`
+                - not going to list values here, see [protobuf_inspector output](./protobuf_inspector_dji_dbgi_truncated.txt)
+                - Mentions of the sensor again
+                    - `IMX686_4624x3210_10b_60FPS`; the sensor and maximum capabilities?
+                    - `TPLG_IMX686_VIDEO_16X9_2_7K_5994_QENH`; the sensor and current configuration
+                    - Lots of individual values, protobuf_inspector shows these as hex, signed int, and signed float because you can't know this without the definition files, apparently
+                    - Lots and lots of binary buffers 
 - The [gyroflow](https://github.com/gyroflow/gyroflow) docs [mention upcoming support for the camera](https://docs.gyroflow.xyz/app/getting-started/supported-cameras/dji)
+- Found a tool for dumping information about protobuf blobs, [protobuf-inspector](https://github.com/mildsunrise/protobuf-inspector)
+    - Wrote a quick script to run it against the two blobs
+        - The dji_dbgi creates a file that's over 450MB large! I've truncated it after it started to repeat the next datablock
+    - Thoughts from this data added to the above information
